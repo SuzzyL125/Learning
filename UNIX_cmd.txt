@@ -35,7 +35,9 @@ Curly Brackets for Multiple Options
 Curly brackets {} allow specifying multiple options in one command (e.g., {pear,peach}.genome lists files starting with pear or peach).
 This method efficiently handles large sets of files sharing common naming patterns.
 
+------------------------------------------
 Creating and Organizing Directories
+------------------------------------------
 
 Use the mkdir command to create directories for different species (e.g., apple, pear, peach).
 Organize files by copying or moving species-specific files into their respective directories.
@@ -48,3 +50,9 @@ Removing Files and Directories
 Remove files with the rm command; use the -i option for interactive confirmation to avoid accidental deletion.
 Remove empty directories with rmdir; for non-empty directories, use rm -r to recursively delete all contents and the directory itself.
 
+------------------------------------------
+Unix Commands for Accessing Files
+------------------------------------------
+
+The "more" command allows viewing file content one page or line at a time, useful for large files.
+The "less" command provides similar functionality but also allows backward navigation through the file.
