@@ -1,0 +1,50 @@
+------------------------------------------
+Basic Unix Commands
+------------------------------------------
+
+The Unix shell interprets commands like date, echo, and pwd (print working directory) to interact with the system.
+Commands not recognized by the shell return an error, indicating the command is not found.
+File System Navigation
+
+The Unix file system is hierarchical, starting from the root directory, with directories and subdirectories separated by slashes (/).
+The cd command changes directories using either absolute paths (from root) or relative paths (from the current directory).
+Special directory references include "." for the current directory and ".." for the parent directory.
+Listing and Viewing Files
+
+The ls command lists files in the current directory, showing files alphabetically by default.
+Additional options like ls -l provide detailed file information including type, permissions, owner, size, and modification date.
+The ls -lt option lists files in reverse chronological order based on modification time.
+The man command (e.g., man ls) displays the manual pages for commands to learn more about their options and usage.
+
+------------------------------------------
+Naming Patterns for File Management
+------------------------------------------
+
+Files for different species and types can be numerous, making manual listing inefficient.
+Using naming patterns helps manage and list files effectively.
+Wildcards in Unix
+
+The asterisk () wildcard represents any string of characters, useful for listing all files related to a species (e.g., apple.).
+The question mark (?) wildcard represents a single character, allowing more specific matches (e.g., ?pple.genome).
+Character Ranges and Combinations
+
+Square brackets [] specify a range of characters, useful for matching files with certain patterns (e.g., [a-z]*.genome).
+Combining wildcards can refine searches, such as listing genome files starting with a specific letter (e.g., p*.genome).
+Curly Brackets for Multiple Options
+
+Curly brackets {} allow specifying multiple options in one command (e.g., {pear,peach}.genome lists files starting with pear or peach).
+This method efficiently handles large sets of files sharing common naming patterns.
+
+Creating and Organizing Directories
+
+Use the mkdir command to create directories for different species (e.g., apple, pear, peach).
+Organize files by copying or moving species-specific files into their respective directories.
+Copying and Moving Files
+
+Copy files with the cp command, either individually or using wildcards (e.g., apple.*).
+Move files with the mv command to transfer them from the current directory to target directories, effectively removing them from the original location.
+Removing Files and Directories
+
+Remove files with the rm command; use the -i option for interactive confirmation to avoid accidental deletion.
+Remove empty directories with rmdir; for non-empty directories, use rm -r to recursively delete all contents and the directory itself.
+
